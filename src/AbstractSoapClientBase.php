@@ -196,7 +196,7 @@ abstract class AbstractSoapClientBase implements SoapClientInterface
      */
     public function getLastResponse($asDomDocument = false)
     {
-        return $this->getLastXml('__getLastResponse', $asDomDocument);
+        return static::getSoapClient()->__getLastResponse();
     }
     /**
      * @param string $method
